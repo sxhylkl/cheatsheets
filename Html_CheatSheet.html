@@ -1,0 +1,337 @@
+<!-- 
+https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list
+-->
+
+<!-- ### Grundgerüst ###
+<!DOCTYPE HTML>
+<html lang="de-DE">
+<head>
+	<meta charset="UTF-8">
+	<title>Aufgabe1</title>
+	<style type="text/css">
+		html, body{height:99%;font-family: Arial, Helvetica, sans-serif;}
+	</style>
+</head>
+<body>
+	<wrapper>
+		<header>
+			<nav></nav>
+		</header>
+		<section>
+			<article></article>
+		</section>
+		<aside>
+		</aside>
+		<footer>
+		</footer>
+	</wrapper>
+</body>
+</html>
+###		### -->
+
+
+<!DOCTYPE HTML>
+<html lang="de-DE">
+<head>
+<meta charset="UTF-8">
+<title>Aufgabe1</title>
+<style type="text/css">
+html, body {
+	height: 99%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+font-family: "Times New Roman", Times, serif;
+font-family: "Courier New", Courier, monospace;
+font-family: "Lucida Console", Monaco, monospace;
+font-variant:small-caps; 
+font-weight: bold;
+font-size: 1.2em;
+p:first-letter{font-size:1.9em; float: left; margin: 0 5px; font-weight: bold;}
+*/
+form {
+	width: 300px;
+}
+
+#fieldset1 {
+	
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	
+}
+
+input[type="radio"] {
+	
+}
+
+input[type="checkbox"] {
+	
+}
+
+textarea {
+	
+}
+
+input[name="select"] {
+	
+}
+
+input[type="submit"], input[type="reset"] {
+	
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	list-style-image: url('img/icon-1.svg');
+	font-size: 1em;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+/*
+ul li:before{color:red;content: "♫ ";font-size:1em;list-style-type:decimal}
+ul: 	circle, disc, square
+ol: 	decimal, decimal-leading-zero, 
+		lower-roman, upper-roman, 
+		lower-latin, upper-latin, 
+		lower-alpha, upper-alpha
+*/
+</style>
+</head>
+<body>
+
+	<label>Form:</label>
+	<form action="#" method="post">
+		<fieldset>
+			<!-- <legend align="center">Ihre Angaben:</legend>-->
+			<legend>Ihre Angaben:</legend>
+		</fieldset>
+		<input type="submit" value="Abschicken" name="submit" /> <input
+			type="reset" value="Zurücksetzen" />
+	</form>
+
+	<label>Select:</label>
+	<select name="select1">
+		<option value="sopt1">Opt1</option>
+		<option value="sopt2">Opt2</option>
+		<option value="sopt3">Opt3</option>
+		<option value="sopt4">Opt4</option>
+		<optgroup label="German Cars">
+			<option value="sopt5">Opt5</option>
+		</optgroup>
+	</select>
+
+	<label>Radio:</label>
+	<input type="radio" name="radio1" id="ropt1" value="ropt1" checked />
+	<label for="ropt1">Opt1</label>
+	<input type="radio" name="radio1" id="ropt2" value="ropt2" />
+	<label for="ropt2">Opt2</label>
+	<input type="radio" name="radio1" id="ropt3" value="ropt3" />
+	<label for="ropt3">Opt3</label>
+	<input type="radio" name="radio1" id="ropt4" value="ropt4" />
+	<label for="ropt4">Opt4</label>
+
+	<label>Checkbox:</label>
+	<input type="checkbox" name="checkbox1" id="copt1" value="copt1"
+		checked />
+	<label for="copt1">Opt1</label>
+	<input type="checkbox" name="checkbox1" id="copt2" value="copt2" />
+	<label for="copt2">Opt1</label>
+	<input type="checkbox" name="checkbox1" id="copt3" value="copt3" />
+	<label for="copt3">Opt1</label>
+
+	<label>Input:</label>
+	<label for="username">Username:</label>
+	<input type="text" name="user" />
+	<label for="username">Username:</label>
+	<input type="number" name="user" min="0.01" max="1.01" step="0.01" />
+	<label for="password">Passwort:</label>
+	<input name="password" type="password" />
+	<label for="email">E-Mail:</label>
+	<input name="email" type="email" />
+	<label for="tel">Telefon:</label>
+	<input name="tel" type="tel" />
+	<label>E-Mail:</label>
+	<textarea cols="30" rows="5" name="textarea1">Ihre Mitteilung</textarea>
+
+
+	<!-- ### Listen ###
+ul{list-style-type: none;margin: 5px; padding: 0;}
+-->
+	<ul>
+		<li>ul1</li>
+		<li>ul2</li>
+		<li>ul3</li>
+		<li>ul4</li>
+		<li>ul5</li>
+	</ul>
+
+	<ol>
+		<li>ol1</li>
+		<li>ol2</li>
+		<li>ol3</li>
+		<li>ol4</li>
+		<li>ol5</li>
+	</ol>
+
+
+	<!-- ### Table ###
+rowspan=2
+colspan=3
+rowspan=2 colspan=2
+
+CSS:
+table {
+	border: 2px solid black;
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+
+th, td {
+	padding: 2px;
+	border:1px solid black;
+}
+ -->
+	<table>
+		<tr>
+			<th>head1</th>
+			<th>head2</th>
+			<th>head3</th>
+			<th>head4</th>
+			<th>head5</th>
+			<th>head6</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+
+
+	<!-- ### Bilder ###
+img{width: 200px;}
+body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+    background-image: url("bgdesert.jpg");
+    background-repeat: no-repeat; repeat-x
+    background-position: right top;
+    background-attachment: fixed;
+}
+-->
+	<img
+		src="https://www.schau-hin.info/fileadmin/_processed_/d/5/csm_1708602240-pumuckl-EkNRqhSuSMG_25492917bd.jpg"
+		alt="Selfhtml">
+
+
+	<!--  ### Links ###
+a{color:darkblue;}
+a:visited{color:darkred;}
+ -->
+	<a href="https://www.w3schools.com/html/">bla</a>
+
+
+	<!-- ### Flexbox ###
+html,body{height: 99%;text-align:center;font-family: Arial, Helvetica, sans-serif;}
+#wrapper{display: flex;flex-direction: column;height: 95%;}
+div{border: 1px solid black;flex: 1;}
+.row{flex-direction: row;border: none;display: flex;}
+.col{flex-direction: column;border: none;display: flex;}
+.flex2{flex: 2;}
+.flex3{flex: 3;}
+-->
+	<div id="wrapper">
+		<div class="row">
+			<div>komplett</div>
+		</div>
+		<div class="row flex2">
+			<div class="flex3">links</div>
+			<div>rechts</div>
+		</div>
+		<div class="row flex2">
+			<div class="col flex2">
+				<div>oben</div>
+				<div>unten</div>
+			</div>
+			<div class="flex3">rechts</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
+
+
+<!-- ### CSS Selektoren ###
+* Selects all elements
+div > p Selects all <p> elements that are a direct descendant of a <div> element
+div + p Selects all <p> elements that are the next sibling of (i.e. placed directly after) <div> elements
+div ~ p Selects all <p> elements that follow, and are siblings of, <div> elements
+
+### CSS Attributes ###
+[attribute] Selects all elements with the specified attribute
+[attribute=value] Selects all elements where the specified attribute is equal to ‘value’
+[attribute~=value] Selects all elements with an attribute containing the word ‘value’
+[attribute|=value] Selects all elements with an attribute list starting with ‘value’
+[attribute^=value] Selects all elements with an attribute beginning with ‘value’
+[attribute$=value] Selects all elements with an attribute ending with ‘value’
+[attribute*=value] Selects all elements with an attribute containing the substring ‘value’
+
+### CSS Pseudo-classes ###
+a:link Selects all unvisited links
+a:visited Selects all visited links
+a:hover Selects links on mouse hover
+a:active Selects the active link element
+p::after Insert content after <p> element
+p::before Insert content before <p> element
+input:checked Selects every checked <input> element
+input:disabled Selects every disabled <input> element
+p:empty Selects every <p> element with no children
+input:enabled Selects every enabled <input> element
+p:first-child Selects every <p> element that is the first child of its parent
+p::first-letter Selects the first letter of every <p> element
+p::first-line Selects the first line of every <p> element
+p:first-of-type Selects every <p> element that is the first <p> element of its parent
+input:focus Selects the <input> element which has focus
+input:in-range Selects <input> elements with a value within a specified range
+input:invalid Selects all <input> elements with an invalid value
+p:lang(language) Selects all <p> elements with a lang attribute equal to ‘language’
+p:last-child Selects every <p> element which is the last child of its parent
+p:last-of-type Selects every <p> element which is the last <p> element of its parent
+:not(p) Selects every element that is not a <p>
+p:nth-child(2) Selects every <p> element that is the second child of its parent
+p:nth-last-child(2) Selects every <p> element that is the second child of its parent, counting from the last child
+p:nth-last-of-type(2) Selects every <p> element that is the second <p> element of its parent, counting from the last child
+p:nth-of-type(2) Selects every <p> element that is the second <p> element of its parent
+p:only-of-type Selects every <p> element that is the only <p> element of its parent
+p:only-child Selects every <p> element that is the only child of its parent
+input:optional Selects <input> elements with no ‘required’ attribute
+input:out-of-range Selects <input> elements with a value outside a specified range
+input:read-only Selects <input> elements with the ‘readonly’ attribute specified
+input:read-write Selects <input> elements with the ‘readonly’ attribute not specified
+input:required Selects <input> elements with the ‘required’ attribute specified
+:root Selects the documents root element
+::selection Selects the portion of an element that is selected by a user
+#id:target Selects the current active #id element
+input:valid Selects all <input> elements with a valid value
+-->
+
+<!--
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At 
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
+amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+sanctus est Lorem ipsum dolor sit amet.
+-->
