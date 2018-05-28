@@ -9,9 +9,15 @@ any(x.name == "t2" for x in l)
 # >>> timeit("[]")
 #===============================================================================
 
-x = "Mein Name ist %s, Nachname %s" % ('Frank', 'Hennige')
+### dynamic strings ###
+print("Mein Name ist %s, Nachname %s" % ('Faruk', 'Heynemann'))
 
-### Ternärer Operator ###
+# f-strings since Python 3.6.3
+name = 'Faruk'
+print(f'Hi {name} how are you doing?')
+
+
+### ternäry operator ###
 condition = True
 a if condition else b  # funktioniert auch mit defs
 
